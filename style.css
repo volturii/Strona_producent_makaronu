@@ -1,0 +1,588 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+
+
+
+
+section{
+    width: 100%;
+    height: 100vh;
+    /*background-image: url(image/mak.jpg);*/
+    background-size: cover;
+    background-position: center;
+    
+}
+
+section nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+
+
+section nav .logo{
+    font-size: 35px;
+    margin: 5px 0;
+    cursor: pointer;
+    position: relative;
+    left: -4%;
+}
+
+
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+section nav ul li a:hover{
+    color: #c72092;
+}
+
+section nav .icons i{
+    margin: 0 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+section nav .icons i:hover{
+    color: #c72092;
+}
+
+.main {
+    background-image: url(image/deskaaaa.png);
+    background-size: 100%;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin-left: -400px;
+}
+
+.main_text {
+    position: relative;
+    right: 300px;
+    text-align: left;
+    max-width: 600px;
+    margin-top: -185px;
+    
+}
+
+.main_image {
+    position: relative;
+    left: 300px;
+    text-align: right;
+    max-width: 600px;
+    margin-left: 400px;
+    
+}
+
+.main_text h1 {
+    font-size: 40px;
+    line-height: 50px;
+    font-family: pyxidium quick;
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main_text p {
+    text-align: justify;
+    line-height: 21px;
+    
+}
+
+.main_image img {
+    max-width: 200%;
+    height: auto;
+    border-radius: 200px;
+    margin-top: -350px;
+}
+
+
+section .main .social_icon{
+    position: absolute;
+    top: 50%;
+    left: 98%;
+    transform: translate(-50%,-50%);
+    font-size: 19px;
+}
+
+section .main .social_icon i{
+    margin: 8px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section .main .social_icon i:hover{
+    color: #c72092;
+}
+
+section .main .button{
+    position: absolute;
+    left: 6%;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: linear-gradient(to right,#c72092 , #6c14d0);
+}
+
+section .main .button a{
+    color: white;
+    text-decoration: none;
+}
+
+section .main .button i{
+    color: white;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+section .main .button:hover i{
+    transform: translateX(6px);
+}
+
+
+
+/*Products*/
+
+.products{
+    width: 100%;
+    height: 110vh;
+    padding: 25px 0;
+    margin-top: 700px;
+    background-image: url(image/deskaaaa.png);
+    background-size: 100%;
+    
+}
+
+.products h1{
+    margin-bottom: 25px;
+    margin-right: 170px;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #4A6EFF,#56E7FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+
+.products .box{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 25px 0;
+
+    
+}
+
+.products .box .card{
+    width: 290px;
+    height: 440px;
+    box-shadow: 0 0 8px #68B1FF;
+    background-color: aliceblue;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 20px;
+   
+}
+
+
+}
+
+.products .box .card .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.products .box .card .image img{
+    width: 200px;
+    margin: 15px 0;
+    transition: 0.3s;
+    border-radius: 120px;
+}
+
+.products .box .card:hover .image img{
+    transform: scale(1.1);
+}
+
+
+
+.products .box .card .products_text h2{
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.products .box .card .products_text p{
+    color: #91919191;
+    line-height: 21px;
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+
+.products .box .card .products_text h3{
+    margin: 7px 0;
+}
+
+
+
+.products .box .card .products_text .btn{
+    text-decoration: none;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #78DC63 , #92DB90);
+    color: white;
+}
+.btn:hover {
+    font-size: 17px;
+}
+
+/*About*/
+
+
+
+.about {
+    background: url(image/deskaaaa.png);
+    background-size: 100%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner-section {
+    display: flex;
+    align-items: center;
+    width: 65%;
+    margin: auto;
+    background-color: #fdfdfd;
+    padding: 35px;
+    box-shadow: 10px 10px 8px rgba(0,0,0,0.3);
+}
+
+.inner-section .image-section {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.inner-section .image-section .about-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.inner-section .content-section {
+    width: 60%;
+}
+
+.inner-section h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text1 {
+    font-size: 13px;
+    color: #545454;
+    line-height: 25px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.skills button {
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    width: 200px;
+    background-color: #00999c;
+    color: white;
+    cursor: pointer;
+}
+
+.skills button:hover {
+    transition: 1s;
+    background-color: #ecf5f5;
+    color: #00999c;
+}
+
+@media screen and (max-width: 1200px) {
+    .inner-section {
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .about {
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+
+    .inner-section {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about {
+        padding: 0;
+    }
+
+    .inner-section {
+        padding: 60px;
+    }
+
+    .skills button {
+        font-size: 19px;
+        padding: 5px;
+        width: 160px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+
+footer{
+    width: 100%;
+}
+
+footer .footer_main{
+    width: 100%;
+    background: #f3f1f1;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer_main .tag{
+    margin: 10px 0;
+}
+
+footer .footer_main .tag .center{
+    text-align: center;
+}
+
+footer .footer_main .tag h1{
+    font-size: 25px;
+    margin: 25px 0;
+    color: #1c0080;
+}
+
+footer .footer_main .tag a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin: 9px 0;
+}
+
+footer .footer_main .tag a i{
+    padding: 0 10px;
+    transition: 0.3;
+}
+
+footer .footer_main .tag a i:hover{
+    color: #c72092;
+}
+
+footer .footer_main .tag .social_link{
+    display: flex;
+}
+
+footer .footer_main .tag .social_link a{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    position: relative;
+    margin: 0 5px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+footer .footer_main .tag .social_link a .fa-brands{
+    font-size: 15px;
+    line-height: 30px;
+    z-index: 10;
+    position: relative;
+    transition: 0.5s;
+}
+
+footer .footer_main .tag .social_link a:hover i{
+    color: white;
+}
+
+footer .footer_main .tag .social_link a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -90px;
+    background: linear-gradient(-45deg, #c72092 , #6c14d0);
+    position: absolute;
+    z-index: -10;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  border-top-style: groove;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-links li {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+/* slajder */
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 300%; /* Zwiększamy szerokość, aby pomieścić wszystkie slajdy */
+    height: 100%;
+    transition: transform 3s ease-in-out; /* Dodajemy płynną animację */
+}
+
+.slide {
+    width: 33.33%; /* W przypadku trzech slajdów */
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Media Queries dla responsywności */
+@media (max-width: 768px) {
+    .slides {
+    width: 200%; /* Zmniejszamy szerokość dla mniejszych ekranów */
+    }
+}
+
+@media (max-width: 480px) {
+    .slides {
+    width: 100%; /* Zmniejszamy szerokość dla jeszcze mniejszych ekranów */
+    }
+}
+
+
